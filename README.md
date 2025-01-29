@@ -31,9 +31,9 @@ GIF created with [Ezgif](https://ezgif.com/).
 
 ## Notes
 
-The page's CSS was cleaned up as much as possible, but it may not be perfect; there might be some redundancy in some places. 
+The page's CSS was cleaned up as much as possible, but it may not be perfect; there might be some redundancy in some places. Given that everything looks as desired and there are no noticeable failures, however, it was left as-is.
 
-Given that everything looks as desired and there are no noticeable failures, however, it was left as-is.
+A config file called `biome.json` was also included for extra code analysis from the Biome LSP.
 
 ## License
 
