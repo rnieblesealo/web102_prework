@@ -1,75 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+	background-color: hsl(235, 26%, 5%);
+	color: #d3eed3;
+
+	font-family: "Funnel Sans";
 }
 
-#tentacles {
-    width: 50px;
+p {
+	font-style: normal;
+	font-weight: 400;
 }
 
-.header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
-}
-
-.stats-container {
-    display: flex;
-}
-
-.stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    text-align: center;
-}
-
-#num-contributions, #total-raised, #num-games {
-    font-size: 50px;
-}
-
-#games-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
-}
-
-.game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
-    text-align: center;
-    border-radius: 7px;
-}
-
-.game-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
-}
-
-#button-container {
-    text-align: center;
+b {
+	font-style: bold;
+	font-weight: 800;
 }
 
 button {
-    font-family: 'Cabin';
-    border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
+}
+
+h3 {
+	font-weight: 500;
+	font-style: normal;
+}
+
+#tentacles {
+	width: 50px;
+}
+
+#button-container {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+#button-container > button,
+input {
+	font-family: "Funnel Sans";
+	font-weight: 800;
+	font-style: bold;
+
+	color: #d3eed3;
+	background-color: #10121c;
+	margin: 0;
+
+	box-sizing: border-box;
+
+	border: none;
+	padding: 1%;
+	margin: 1%;
+	border-radius: 7px;
+}
+
+#button-container > input {
+	border: none;
+}
+
+#button-container > button:hover,
+input:hover {
+	outline: 1px solid #d3eed3;
+}
+
+.header {
+	display: flex;
+	padding: 1%;
+	align-items: center;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -10px;
+
+	justify-content: left;
+	background-color: #10121c;
+}
+
+.stats-container {
+	display: flex;
+}
+
+.stats-card {
+	background-color: #10121c;
+	border-radius: 7px;
+	padding: 1%;
+	margin: 1%;
+	width: 100%;
+	text-align: center;
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+#num-contributions,
+#total-raised,
+#num-games {
+	font-size: 50px;
+	font-style: bold;
+	font-weight: 800;
+}
+
+#games-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	gap: 50px;
+}
+
+.game-img {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #ffffff;
+}
+
+.game-card {
+	background-color: #10121c;
+	width: 300px;
+	height: 100%;
+	text-align: center;
+	border-radius: 7px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	overflow: hidden;
+}
+
+.game-card:hover {
+	cursor: pointer;
+	box-shadow: 0 0 50px #d3edd240;
+}
+
+.game-card > p {
+	margin: 0;
+	padding: 10px;
+}
+
+.game-card > p.funded,
+.game-card > p.unfunded {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-style: bold;
+	font-weight: 800;
+}
+
+.game-card > p.funded {
+	background-color: #26854c;
+}
+
+.game-card > p.unfunded {
+	background-color: #de5d3a;
+}
+
+.stats-container {
+	display: flex;
+	align-items: center;
+}
+
+.stats-container:hover {
+	cursor: pointer;
+	box-shadow: 0 0 30xp lightblue;
 }
